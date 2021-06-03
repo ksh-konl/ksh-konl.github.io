@@ -3,6 +3,10 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.home table {
+  border: 5px;
+}
+
 .navigation ul {
   margin: 0;
   padding: 0;
