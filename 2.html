@@ -1,22 +1,38 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <style>
+    .bookTitle{
+      font-weight: bold;
+      color: coral;
+    }
+    #first{
+      font-size: 35px;
+    }
+  </style>
   <title>KSH's blog</title>
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Raleway:100,200,600,700" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>  
   <h1><a href="index.html">KSH's blog</a></h1>
-  <p>Useful links
-    <ul>가장 많이 쓰이는 태그들 모음</li>
-      <br>
-      <li><a href="https://www.advancedwebranking.com/html/" target="_blank" title="webtag ranking">https://www.advancedwebranking.com/html/</a></li>
-    </ul>
-    <ul>Free images
-      <br>
-      <li><a href="https://unsplash.com/t/nature" target="_blank" title="free downloadable images">https://unsplash.com/t/nature</a></li>
-    </ul>
- <img src="https://user-images.githubusercontent.com/72165351/121019049-5e415700-c79f-11eb-8428-7eda697c81af.jpg" width = 100%> 
+
+  <input type="button" value="야간모드로 변경" onclick="
+    var bodyTarget = document.querySelector('body');
+    if(this.value==='야간모드로 변경'){
+      bodyTarget.style.backgroundColor='black';
+      this.value='주간모드로 변경';
+    } else {
+      bodyTarget.style.backgroundColor='white';
+      this.value='야간모드로 변경';
+    }
+  ">
+
+
+  <h2>책</h2>
+    <h3><span class="bookTitle">흔들리지 않고 ADHD 아이 키우기 - 이영민</span></h3>
+      <p><span id=first>감</span>성 에너지가 마이너스가 되면 불안과 강박 같은 자기 파괴적 틀 안에 나를 밀어 넣어 옴짝달싹 못하게 만든다. 무엇을 하든 삶의 의미가 발견하기 힘든데 뭔가를 더 하라는 얘기가 당연히 마음에 닿을 리 없다. 무의미하다는 것만 더 깊게 느껴질 뿐이다.</p>
+     
       
       
 </body>
